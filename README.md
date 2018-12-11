@@ -1,6 +1,7 @@
 # FreENotes (Windows Only!)
 Gather all Enotes Expert Answers for free via a simple and easy to use .EXE
-# Discord: Reecepbcups#3370
+# Contact Me
+Discord: Reecepbcups#3370
 # How To Run
 https://youtu.be/h8qemNE_ix0
 
