@@ -3,13 +3,7 @@ import requests
 
 build_exe_options = {"packages": ["os", "sys", "multiprocessing", "time"],
                      "excludes": ["tkinter"],
-                     "includes": ["request", "time", "idna.idnadata", "os"] } # <-- Include easy_gui
-
-
-
-##base = None
-##if sys.platform == "win32":
-##base = "Win32GUI"
+                     "includes": ["request", "time", "idna.idnadata", "os"] } 
 
 setup(name = "FreEnotes" ,
       version = "1.1" ,
@@ -17,3 +11,7 @@ setup(name = "FreEnotes" ,
       author = "Reecepbcups",
       options = {"build_exe": build_exe_options},
       executables = [Executable("freEnotes.py")])
+
+
+
+# ToDo at some time - add "tkinter" to includes list
