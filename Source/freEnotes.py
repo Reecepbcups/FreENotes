@@ -1,10 +1,7 @@
-##* Copyright (C) Reece W - All Rights Reserved
-##* Unauthorized editing of this file, via any medium is strictly prohibited
-##* Proprietary and confidential
 ##* Written by Reece W <Reecepbcups@gmail.com>, November 2018
 
 import requests
-from multiprocessing import Queue # something for py2exe /shrug/
+from multiprocessing import Queue # something for py2exe :shrug:
 import os
 import time
 
@@ -14,7 +11,6 @@ print("=" * 25)
 
 # Grab Enotes Link
 link = input('\nEnotes Link: ')
-
 
 # Add https:// if the user did not provide
 if 'https://' not in link: 
@@ -31,7 +27,6 @@ except:
 # Grabs the source code of the HTML page. This will still grab the CSS file from enotes, so it will look the same
 try:
     page = requests.get(link)
-
 
     # Removes the blurred boxes from the code we downloaded. Epic Win.
     webpage = str(page.text).replace('hh-box__answer__text redacted anon-hide obscured','') 
